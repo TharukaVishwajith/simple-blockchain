@@ -33,7 +33,7 @@ class Block:
     #if someone changes the hash of a block
     #every block that comes after it is changed 
     #this helps make a blockchain immutable
-    def hashFUn(self):
+    def hashFun(self):
         #SHA-256 is a hashing algorithm that
         # generates an almost-unique 256-bit signature that represents
         # some piece of text
@@ -56,4 +56,4 @@ class Block:
 
     def __str__(self):
         #print out the value of a block
-        return "Block Hash: " + str(self.hashFUn()) + "\nBlockNo: " + str(self.blockNo) + "\nBlock Data: " + str(self.data) + "\nHashes: " + str(self.nonce) + "\n--------------"
+        return "Block Hash: " + str(self.hashFun()) + "\nBlockNo: " + str(self.blockNo) + "\nBlock Data: " + str(self.data) + "\nHashes: " + str(self.nonce) + "\n--------------"

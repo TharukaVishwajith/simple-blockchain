@@ -26,7 +26,7 @@ class Blockchain:
         
         #set the hash of a given block
         #as our new block's previous hash
-        block.previous_hash = self.block.hashFUn()
+        block.previous_hash = self.block.hashFun()
         #set the block # of our new block
         #as the given block's # + 1, since
         #its next in the chain
@@ -44,7 +44,7 @@ class Blockchain:
         #from 0 to 2^32 
         for n in range(self.maxNonce):
             #is the value of the given block's hash less than our target value?
-            if int(block.hashFUn(), 16) <= self.target:
+            if int(block.hashFun(), 16) <= self.target:
                 #if it is,
                 #add the block to the chain
                 self.add(block)
